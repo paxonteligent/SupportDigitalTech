@@ -711,4 +711,333 @@ footer {
     .logo {
         font-size: 18px;
     }
+}/* =====================================================
+   ADVANCED HERO DESIGN
+   ===================================================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 120px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.security-badge {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    margin-bottom: 22px;
+
+    border: 1px solid rgba(0, 210, 255, 0.3);
+
+    border-radius: 50px;
+
+    color: #00d7ff;
+
+    background: rgba(0, 150, 255, 0.08);
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    margin-bottom: 22px;
+
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 1.05;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #00d7ff;
+
+    background: none;
+
+    -webkit-text-fill-color: #00d7ff;
+}
+
+.hero-text p {
+    margin: 0 0 30px;
+
+    max-width: 620px;
+
+    color: #aebdca;
+
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.secondary-button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid rgba(0, 210, 255, 0.35);
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.secondary-button:hover {
+    background: rgba(0, 190, 255, 0.1);
+
+    border-color: #00d7ff;
+}
+
+/* =====================================================
+   CYBERSECURITY VISUAL
+   ===================================================== */
+
+.cyber-visual {
+    position: relative;
+
+    width: 360px;
+    height: 360px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.security-circle {
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(0, 210, 255, 0.35);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 180, 255, 0.16),
+            rgba(0, 0, 0, 0.05) 70%
+        );
+
+    box-shadow:
+        0 0 40px rgba(0, 170, 255, 0.15),
+        inset 0 0 40px rgba(0, 170, 255, 0.08);
+
+    animation: pulseCircle 3s ease-in-out infinite;
+}
+
+.shield {
+    width: 115px;
+    height: 135px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 65px;
+
+    border: 1px solid rgba(0, 220, 255, 0.4);
+
+    clip-path: polygon(
+        50% 0%,
+        90% 15%,
+        85% 65%,
+        50% 100%,
+        15% 65%,
+        10% 15%
+    );
+
+    background:
+        rgba(0, 180, 255, 0.12);
+
+    filter:
+        drop-shadow(
+            0 0 20px rgba(0, 210, 255, 0.6)
+        );
+}
+
+/* Scanning animation */
+
+.scan-line {
+    position: absolute;
+
+    width: 280px;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #00eaff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 15px #00dfff;
+
+    animation:
+        scanning 3s ease-in-out infinite;
+
+    z-index: 5;
+}
+
+@keyframes scanning {
+
+    0% {
+        transform: translateY(-130px);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(130px);
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-130px);
+        opacity: 0;
+    }
+}
+
+/* Status */
+
+.security-status {
+    position: absolute;
+
+    bottom: 5px;
+
+    padding: 10px 17px;
+
+    border-radius: 8px;
+
+    background:
+        rgba(4, 15, 27, 0.9);
+
+    border:
+        1px solid rgba(0, 210, 255, 0.25);
+
+    color: #9fb2c4;
+
+    font-size: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.security-status strong {
+    color: #00e0b0;
+}
+
+.status-dot {
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #00e0b0;
+
+    box-shadow:
+        0 0 10px #00e0b0;
+}
+
+@keyframes pulseCircle {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+}
+
+/* =====================================================
+   HERO MOBILE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cyber-visual {
+        width: 300px;
+        height: 300px;
+    }
+
+    .security-circle {
+        width: 220px;
+        height: 220px;
+    }
 }
