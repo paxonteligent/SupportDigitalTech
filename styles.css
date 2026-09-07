@@ -1040,4 +1040,32 @@ footer {
         width: 220px;
         height: 220px;
     }
+}/* =====================================================
+   SERVICE LINKS
+   ===================================================== */
+
+.service-link {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #00d7ff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.service-link:hover {
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+.service-card {
+    cursor: default;
 }
