@@ -575,6 +575,26 @@
     </div>
     <div class="contact-form-container">
 <form class="support-form" action="contact.php" method="POST">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <select name="service" required>
+        <option value="">Select a service</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+        <option value="Technical Support">Technical Support</option>
+        <option value="Web Solutions">Web Solutions</option>
+        <option value="Account Security">Account Security</option>
+        <option value="System Assistance">System Assistance</option>
+        <option value="Digital Support">Digital Support</option>
+    </select>
+
+    <textarea name="message" placeholder="Describe your request" required></textarea>
+
+    <button type="submit">Submit Support Request</button>
+
+</form>
             <div class="form-row">
                 <div class="form-group">
                     <label for="name">Full Name</label>
