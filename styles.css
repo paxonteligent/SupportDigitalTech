@@ -593,4 +593,122 @@ footer {
     .testimonial-card {
         padding: 25px;
     }
+}/* =====================================================
+   PROFESSIONAL NAVIGATION
+   ===================================================== */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(2, 8, 18, 0.82);
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(0, 200, 255, 0.12);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 75px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #00cfff;
+}
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #b9c8d6;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00d9ff;
+}
+
+/* Navigation button */
+
+.nav-button {
+    padding: 10px 18px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    border-radius: 7px;
+
+    background: linear-gradient(
+        90deg,
+        #007cff,
+        #00d7c3
+    );
+
+    box-shadow:
+        0 0 18px rgba(0, 170, 255, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 28px rgba(0, 210, 255, 0.5);
+}
+
+/* Mobile navigation */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        min-height: 65px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-button {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
 }
