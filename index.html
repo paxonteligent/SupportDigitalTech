@@ -1,110 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- NAVIGATION -->
-<header class="site-header">
-    <nav class="navbar">
-
-        <a href="#" class="logo">
-            Support<span>DigitalTech</span>
-        </a>
-
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-        <a href="#contact" class="nav-button">
-            Get Support
-        </a>
-
-    </nav>
-</header>
+<head>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                Support<span>DigitalTech</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="nav-button">
+                Get Support
+            </a>
+        </nav>
+    </header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SupportDigitalTech | Cybersecurity & Digital Solutions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HERO -->
     <!-- HERO SECTION -->
-<section class="hero">
-
-    <div class="hero-content">
-
-        <div class="hero-text">
-
-            <div class="security-badge">
-                ● DIGITAL SECURITY & SUPPORT
-            </div>
-
-            <h1>
-                Secure Your
-                <span>Digital World</span>
-            </h1>
-
-            <p>
-                Professional cybersecurity guidance, technical
-                support, and digital solutions for modern
-                technology needs.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#services" class="cta-button">
-                    Explore Services
-                </a>
-
-                <a href="#contact" class="secondary-button">
-                    Contact Us
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- CYBERSECURITY VISUAL -->
-
-        <div class="cyber-visual">
-
-            <div class="scan-line"></div>
-
-            <div class="security-circle">
-
-                <div class="shield">
-                    🛡️
-                </div>
-
-            </div>
-
-            <div class="security-status">
-
-                <span class="status-dot"></span>
-
-                SYSTEM STATUS:
-                <strong>SECURE</strong>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+    <section class="hero">
         <div class="hero-content">
-            <h1>SupportDigitalTech</h1>
-            <p>
-                Your trusted partner for cybersecurity solutions,
-                technical support, and modern digital services.
-            </p>
-            <a href="#contact" class="cta-button">
-                Get in Touch
-            </a>
+            <div class="hero-text">
+                <div class="security-badge">
+                    ● DIGITAL SECURITY & SUPPORT
+                </div>
+                <h1>
+                    Secure Your
+                    <span>Digital World</span>
+                </h1>
+                <p>
+                    Professional cybersecurity guidance, technical
+                    support, and digital solutions for modern
+                    technology needs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="cta-button">
+                        Explore Services
+                    </a>
+                    <a href="#contact" class="secondary-button">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <!-- CYBERSECURITY VISUAL -->
+            <div class="cyber-visual">
+                <div class="scan-line"></div>
+                <div class="security-circle">
+                    <div class="shield">
+                        🛡️
+                    </div>
+                </div>
+                <div class="security-status">
+                    <span class="status-dot"></span>
+                    SYSTEM STATUS: <strong>SECURE</strong>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- ABOUT -->
+    <div class="hero-content">
+        <h1>SupportDigitalTech</h1>
+        <p>
+            Your trusted partner for cybersecurity solutions,
+            technical support, and modern digital services.
+        </p>
+        <a href="#contact" class="cta-button">
+            Get in Touch
+        </a>
+    </div>
+    <!-- ABOUT SECTION -->
     <section id="about">
         <div class="section-title">
             <h2>About SupportDigitalTech</h2>
@@ -133,337 +103,8 @@
             </div>
         </div>
     </section>
-    <!-- SERVICES -->
-/* =====================================================
-   ADVANCED HERO DESIGN
-   ===================================================== */
-
-.hero {
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-
-    padding-top: 120px;
-}
-
-.hero-content {
-    width: 100%;
-    max-width: 1200px;
-
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-
-    align-items: center;
-
-    gap: 60px;
-}
-
-.hero-text {
-    text-align: left;
-}
-
-.security-badge {
-    display: inline-block;
-
-    padding: 8px 14px;
-
-    margin-bottom: 22px;
-
-    border: 1px solid rgba(0, 210, 255, 0.3);
-
-    border-radius: 50px;
-
-    color: #00d7ff;
-
-    background: rgba(0, 150, 255, 0.08);
-
-    font-size: 12px;
-    font-weight: bold;
-
-    letter-spacing: 1px;
-}
-
-.hero h1 {
-    margin-bottom: 22px;
-
-    font-size: clamp(48px, 6vw, 78px);
-
-    line-height: 1.05;
-}
-
-.hero h1 span {
-    display: block;
-
-    color: #00d7ff;
-
-    background: none;
-
-    -webkit-text-fill-color: #00d7ff;
-}
-
-.hero-text p {
-    margin: 0 0 30px;
-
-    max-width: 620px;
-
-    color: #aebdca;
-
-    font-size: 18px;
-}
-
-.hero-buttons {
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-}
-
-.secondary-button {
-    display: inline-block;
-
-    padding: 14px 30px;
-
-    border: 1px solid rgba(0, 210, 255, 0.35);
-
-    border-radius: 8px;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    transition: 0.3s ease;
-}
-
-.secondary-button:hover {
-    background: rgba(0, 190, 255, 0.1);
-
-    border-color: #00d7ff;
-}
-
-/* =====================================================
-   CYBERSECURITY VISUAL
-   ===================================================== */
-
-.cyber-visual {
-    position: relative;
-
-    width: 360px;
-    height: 360px;
-
-    margin: auto;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-}
-
-.security-circle {
-    width: 260px;
-    height: 260px;
-
-    border-radius: 50%;
-
-    border: 1px solid rgba(0, 210, 255, 0.35);
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(0, 180, 255, 0.16),
-            rgba(0, 0, 0, 0.05) 70%
-        );
-
-    box-shadow:
-        0 0 40px rgba(0, 170, 255, 0.15),
-        inset 0 0 40px rgba(0, 170, 255, 0.08);
-
-    animation: pulseCircle 3s ease-in-out infinite;
-}
-
-.shield {
-    width: 115px;
-    height: 135px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    font-size: 65px;
-
-    border: 1px solid rgba(0, 220, 255, 0.4);
-
-    clip-path: polygon(
-        50% 0%,
-        90% 15%,
-        85% 65%,
-        50% 100%,
-        15% 65%,
-        10% 15%
-    );
-
-    background:
-        rgba(0, 180, 255, 0.12);
-
-    filter:
-        drop-shadow(
-            0 0 20px rgba(0, 210, 255, 0.6)
-        );
-}
-
-/* Scanning animation */
-
-.scan-line {
-    position: absolute;
-
-    width: 280px;
-    height: 2px;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            #00eaff,
-            transparent
-        );
-
-    box-shadow:
-        0 0 15px #00dfff;
-
-    animation:
-        scanning 3s ease-in-out infinite;
-
-    z-index: 5;
-}
-
-@keyframes scanning {
-
-    0% {
-        transform: translateY(-130px);
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-    }
-
-    50% {
-        transform: translateY(130px);
-        opacity: 1;
-    }
-
-    80% {
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(-130px);
-        opacity: 0;
-    }
-}
-
-/* Status */
-
-.security-status {
-    position: absolute;
-
-    bottom: 5px;
-
-    padding: 10px 17px;
-
-    border-radius: 8px;
-
-    background:
-        rgba(4, 15, 27, 0.9);
-
-    border:
-        1px solid rgba(0, 210, 255, 0.25);
-
-    color: #9fb2c4;
-
-    font-size: 12px;
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.35);
-}
-
-.security-status strong {
-    color: #00e0b0;
-}
-
-.status-dot {
-    display: inline-block;
-
-    width: 7px;
-    height: 7px;
-
-    margin-right: 7px;
-
-    border-radius: 50%;
-
-    background: #00e0b0;
-
-    box-shadow:
-        0 0 10px #00e0b0;
-}
-
-@keyframes pulseCircle {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.04);
-    }
-}
-
-/* =====================================================
-   HERO MOBILE
-   ===================================================== */
-
-@media (max-width: 800px) {
-
-    .hero-content {
-        grid-template-columns: 1fr;
-
-        text-align: center;
-    }
-
-    .hero-text {
-        text-align: center;
-    }
-
-    .hero-text p {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .cyber-visual {
-        width: 300px;
-        height: 300px;
-    }
-
-    .security-circle {
-        width: 220px;
-        height: 220px;
-    }
-}
+    <!-- SERVICES SECTION -->
+    <section id="services">
         <div class="section-title">
             <h2>Our Services</h2>
             <p>
@@ -526,7 +167,7 @@
             </div>
         </div>
     </section>
-    <!-- TESTIMONIALS -->
+    <!-- TESTIMONIALS SECTION -->
     <section id="testimonials">
         <div class="section-title">
             <h2>What Our Clients Say</h2>
@@ -562,40 +203,18 @@
             </div>
         </div>
     </section>
-    <!-- CONTACT -->
     <!-- CONTACT / SUPPORT SECTION -->
-<section id="contact">
-    <div class="section-title">
-        <div class="security-badge">CONTACT SUPPORT</div>
-        <h2>How Can We Help?</h2>
-        <p>
-            Tell us what you need assistance with and
-            our support team can review your request.
-        </p>
-    </div>
-    <div class="contact-form-container">
-<form class="support-form" action="contact.php" method="POST">
-
-    <input type="text" name="name" placeholder="Full Name" required>
-
-    <input type="email" name="email" placeholder="Email Address" required>
-
-    <select name="service" required>
-        <option value="">Select a service</option>
-        <option value="Cybersecurity">Cybersecurity</option>
-        <option value="Technical Support">Technical Support</option>
-        <option value="Web Solutions">Web Solutions</option>
-        <option value="Account Security">Account Security</option>
-        <option value="System Assistance">System Assistance</option>
-        <option value="Digital Support">Digital Support</option>
-    </select>
-
-    <textarea name="message" placeholder="Describe your request" required></textarea>
-
-    <button type="submit">Submit Support Request</button>
-
-</form>
-            <div class="form-row">
+    <section id="contact">
+        <div class="section-title">
+            <div class="security-badge">CONTACT SUPPORT</div>
+            <h2>How Can We Help?</h2>
+            <p>
+                Tell us what you need assistance with and
+                our support team can review your request.
+            </p>
+        </div>
+        <div class="contact-form-container">
+            <form class="support-form" action="contact.php" method="POST">
                 <div class="form-group">
                     <label for="name">Full Name</label>
                     <input
@@ -616,70 +235,52 @@
                         required
                     >
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="service">Service Required</label>
-                <select
-                    id="service"
-                    name="service"
-                    required
+                <div class="form-group">
+                    <label for="service">Service Required</label>
+                    <select
+                        id="service"
+                        name="service"
+                        required
+                    >
+                        <option value="">Select a service</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Technical Support">Technical Support</option>
+                        <option value="Web Solutions">Web Solutions</option>
+                        <option value="Account Security">Account Security</option>
+                        <option value="System Assistance">System Assistance</option>
+                        <option value="Digital Support">Digital Support</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Describe Your Request</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Tell us how we can help..."
+                        required
+                    ></textarea>
+                </div>
+                <button
+                    type="submit"
+                    class="cta-button form-submit"
                 >
-                    <option value="">
-                        Select a service
-                    </option>
-                    <option value="cybersecurity">
-                        Cybersecurity
-                    </option>
-                    <option value="technical-support">
-                        Technical Support
-                    </option>
-                    <option value="web-solutions">
-                        Web Solutions
-                    </option>
-                    <option value="account-security">
-                        Account Security
-                    </option>
-                    <option value="system-assistance">
-                        System Assistance
-                    </option>
-                    <option value="digital-support">
-                        Digital Support
-                    </option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="message">
-                    Describe Your Request
-                </label>
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    placeholder="Tell us how we can help..."
-                    required
-                ></textarea>
-            </div>
-            <button
-                type="submit"
-                class="cta-button form-submit"
-            >
-                Submit Support Request
-            </button>
-        </form>
-    </div>
-</section>
-        <div class="contact-box">
-            <h2>Need Technical Support?</h2>
-            <p>
-                Contact SupportDigitalTech to discuss your
-                technology or digital service requirements.
-            </p>
-            <a href="mailto:info@supportglobal-techdriver.com"
-               class="cta-button">
-                Contact Support
-            </a>
+                    Submit Support Request
+                </button>
+            </form>
         </div>
     </section>
+    <div class="contact-box">
+        <h2>Need Technical Support?</h2>
+        <p>
+            Contact SupportDigitalTech to discuss your
+            technology or digital service requirements.
+        </p>
+        <a href="mailto:info@supportglobal-techdriver.com"
+           class="cta-button">
+            Contact Support
+        </a>
+    </div>
     <!-- FOOTER -->
     <footer>
         <p>
